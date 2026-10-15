@@ -533,7 +533,7 @@ async def retry(
                     )
 
                 try:
-                    run_flow(
+                    await run_flow(
                         flow=loaded_flow,
                         flow_run=flow_run,
                         return_type="state",
